@@ -1,21 +1,16 @@
-public  abstract class  Student extends User {
-    private int studentID;
+package com.company.Model;
+
+public   class  Student extends User {
+    private String studentID;
     private int GPA;
     private String supervisor;
     private int enteringYear;
     private int acceptedUnits;
-    private enum studentGrade{
-        Undergraduate , Master , PHD
-    }
-    private enum status{
-        Studying , Graduated , WithdrawalFromEducation
-    }
-
-    public void setStudentID(int studentID) {
+    public void setStudentID(String studentID) {
         this.studentID = studentID;
     }
 
-    public int getStudentID() {
+    public String getStudentID() {
         return studentID;
     }
 

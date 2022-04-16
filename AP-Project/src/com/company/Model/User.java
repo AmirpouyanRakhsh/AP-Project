@@ -1,10 +1,13 @@
+package com.company.Model;
+
 public class User {
     private String firstName;
     private String lastName;
-    private int nationalID;
-    private int phoneNumber;
+    private String  nationalID;
+    private String  phoneNumber;
     private String email;
     private String faculty;
+    private String password;
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -22,19 +25,20 @@ public class User {
         return lastName;
     }
 
-    public void setNationalID(int nationalID) {
+    public void setNationalID(String nationalID) {
+
         this.nationalID = nationalID;
     }
 
-    public int getNationalID() {
+    public String getNationalID() {
         return nationalID;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getPhoneNumber() {
+    public String  getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -52,5 +56,18 @@ public class User {
 
     public String getFaculty() {
         return faculty;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String toString(){
+        return firstName + " " + lastName+ " " + nationalID;
     }
 }

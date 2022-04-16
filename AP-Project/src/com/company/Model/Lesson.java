@@ -1,3 +1,5 @@
+package com.company.Model;
+
 public class Lesson {
     private String name;
     private int courseNumber;

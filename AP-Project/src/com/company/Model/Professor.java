@@ -1,3 +1,5 @@
+package com.company.Model;
+
 public class Professor extends User{
     private int professorID;
     private int roomNumber;
