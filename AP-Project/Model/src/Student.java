@@ -3,6 +3,7 @@ public  abstract class  Student extends User {
     private int GPA;
     private String supervisor;
     private int enteringYear;
+    private int acceptedUnits;
     private enum studentGrade{
         Undergraduate , Master , PHD
     }
@@ -40,5 +41,13 @@ public  abstract class  Student extends User {
 
     public int getEnteringYear() {
         return enteringYear;
+    }
+
+    public void setAcceptedUnits(int acceptedUnits) {
+        this.acceptedUnits = acceptedUnits;
+    }
+
+    public int getAcceptedUnits() {
+        return acceptedUnits;
     }
 }
